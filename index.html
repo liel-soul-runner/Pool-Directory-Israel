@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מאגר הבריכות – אנשי מקצוע וספקים לבריכות בנויות בישראל</title>
+<meta name="description" content="מאגר אנשי המקצוע והספקים בתחום הבריכות הבנויות בישראל: בוני בריכות, מתקיני מכסים, חדרי מכונות, ציפוי, חימום ואחזקה. חיפוש לפי אזור, מוצר ומחיר ופנייה בוואטסאפ בלחיצה.">
+<meta property="og:title" content="מאגר הבריכות – אנשי מקצוע לבריכות בנויות בישראל">
+<meta property="og:description" content="מצאו בונה בריכות, מתקין מכסים או ספק ציוד לפי אזור ומחיר, ופנו אליו בוואטסאפ.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#063a47">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23063a47'/%3E%3Cpath d='M4 19q3-4 6 0t6 0 6 0 6 0' stroke='%2332d0d8' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Rubik:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./" aria-label="מאגר הבריכות – דף הבית"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0b5566"/><path d="M4 19q3-4 6 0t6 0 6 0 6 0" stroke="#5be0e6" stroke-width="3" fill="none"/></svg><span>מאגר הבריכות</span></a>
+  <nav><a href="#results">אנשי מקצוע</a><a href="#join" class="btn-join">הצטרפו למאגר</a></nav>
+</header>
+
+<section class="hero">
+  <div class="hero-in">
+    <h1>כל אנשי המקצוע של הבריכות הבנויות, במקום אחד</h1>
+    <p class="lead">חפשו מתקין מכסים, בונה בריכות או ספק ציוד לפי אזור, מוצר ומחיר, ופנו אליו בוואטסאפ בלחיצה.</p>
+    <form id="searchForm" class="search" role="search" autocomplete="off">
+      <label class="f f-q"><span>מה מחפשים?</span><input id="q" type="search" placeholder="למשל: מכסה חשמלי, משאבת חום, ציפוי" enterkeyhint="search"></label>
+      <label class="f"><span>סוג בעל מקצוע</span><select id="cat"></select></label>
+      <label class="f"><span>אזור</span><select id="region"></select></label>
+      <button class="btn-search" type="submit">חיפוש</button>
+    </form>
+    <div id="chips" class="chips" aria-label="קטגוריות מהירות"></div>
+  </div>
+</section>
+
+<main id="results" class="wrap">
+  <aside class="filters">
+    <details id="filtersBox" open>
+      <summary>סינון מתקדם</summary>
+      <div class="fgrp"><label for="max">מחיר מקסימלי למוצר או שירות: <b id="maxOut">ללא הגבלה</b></label>
+        <input id="max" type="range" min="0" max="50000" step="500" value="0"></div>
+      <label class="chk"><input id="install" type="checkbox"> רק ספקים עם מחיר כולל התקנה</label>
+      <label class="chk"><input id="national" type="checkbox"> רק ספקים עם שירות ארצי</label>
+      <div class="fgrp"><label for="years">ותק מינימלי</label>
+        <select id="years"><option value="0">ללא דרישה</option><option value="5">5 שנים ומעלה</option><option value="10">10 שנים ומעלה</option><option value="20">20 שנים ומעלה</option></select></div>
+      <div class="fgrp"><label for="sort">מיון</label>
+        <select id="sort"><option value="rel">התאמה לחיפוש</option><option value="years">ותק (מהגבוה)</option><option value="price">מחיר התחלתי (מהנמוך)</option><option value="name">שם (א–ת)</option></select></div>
+      <button id="reset" class="btn-ghost" type="button">נקה את כל הסינונים</button>
+    </details>
+  </aside>
+  <section>
+    <div class="bar"><h2 id="count" aria-live="polite">טוען…</h2><span class="hint">סמנו כמה אנשי מקצוע כדי לבקש מהם הצעת מחיר יחד</span></div>
+    <div id="list" class="list"></div>
+  </section>
+</main>
+
+<div id="selBar" class="selbar" hidden>
+  <span><b id="selCount">0</b> נבחרו</span>
+  <button id="selOpen" class="btn-wa" type="button">בקשת הצעת מחיר בוואטסאפ</button>
+  <button id="selClear" class="btn-ghost" type="button">נקה</button>
+</div>
+
+<dialog id="dlg">
+  <form method="dialog" class="dlg-in">
+    <h3>בקשת הצעת מחיר מכמה אנשי מקצוע</h3>
+    <p class="note">וואטסאפ אינו מאפשר ליצור קבוצה אוטומטית מאתר. לכן אפשר לשלוח את אותה הודעה לכל אחד בנפרד, או להעתיק את המספרים וליצור קבוצה ידנית באפליקציה.</p>
+    <label for="msg">נוסח ההודעה</label>
+    <textarea id="msg" rows="4"></textarea>
+    <ul id="dlgList" class="dlg-list"></ul>
+    <div class="dlg-act"><button id="copyNums" type="button" class="btn-ghost">העתקת כל המספרים</button><button class="btn-ghost" value="x">סגירה</button></div>
+  </form>
+</dialog>
+
+<section id="join" class="join">
+  <div class="wrap-n">
+    <h2>בעלי מקצוע: הצטרפו למאגר</h2>
+    <p>רישום בעל מקצוע בתחום הבריכות הבנויות. שלחו לנו את פרטי העסק, ונוסיף אתכם למאגר אחרי בדיקה.</p>
+    <form id="joinForm" class="jf">
+      <input name="name" placeholder="שם בעל העסק" required><input name="phone" type="tel" placeholder="טלפון" required>
+      <input name="city" placeholder="עיר" required><input name="what" placeholder="מה אתם מציעים? (למשל: התקנת מכסים)" required>
+      <button class="btn-wa" type="submit">שליחה בוואטסאפ</button>
+    </form>
+  </div>
+</section>
+
+<footer><p>המאגר מתמקד בבריכות בנויות (בטון, גונייט ודומיהן). בריכות מתנפחות ומתקפלות, כגון אינטקס, אינן כלולות. המחירים משוערים ובאחריות בעל המקצוע; מומלץ לוודא מחיר סופי מולו.</p></footer>
+
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
