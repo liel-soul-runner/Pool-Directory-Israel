@@ -1,0 +1,539 @@
+{
+ "categories": [
+  {
+   "id": "builders",
+   "label": "בוני בריכות"
+  },
+  {
+   "id": "machine-rooms",
+   "label": "חדרי בריכה ומכונות"
+  },
+  {
+   "id": "covers",
+   "label": "מכסים לבריכה"
+  },
+  {
+   "id": "finishing",
+   "label": "ציפוי וגמר"
+  },
+  {
+   "id": "equipment",
+   "label": "ציוד, סינון ומשאבות"
+  },
+  {
+   "id": "heating",
+   "label": "חימום ומשאבות חום"
+  },
+  {
+   "id": "lighting",
+   "label": "תאורה ואטרקציות"
+  },
+  {
+   "id": "maintenance",
+   "label": "ניקוי ואחזקה"
+  },
+  {
+   "id": "repairs",
+   "label": "תיקוני נזילות ושיפוצים"
+  },
+  {
+   "id": "landscaping",
+   "label": "פיתוח סביב הבריכה"
+  }
+ ],
+ "regions": [
+  {
+   "id": "north",
+   "label": "צפון"
+  },
+  {
+   "id": "haifa",
+   "label": "חיפה והקריות"
+  },
+  {
+   "id": "sharon",
+   "label": "השרון"
+  },
+  {
+   "id": "center",
+   "label": "מרכז"
+  },
+  {
+   "id": "telaviv",
+   "label": "תל אביב והגוש"
+  },
+  {
+   "id": "jerusalem",
+   "label": "ירושלים והסביבה"
+  },
+  {
+   "id": "shfela",
+   "label": "השפלה"
+  },
+  {
+   "id": "south",
+   "label": "דרום"
+  },
+  {
+   "id": "eilat",
+   "label": "אילת והערבה"
+  }
+ ],
+ "professionals": [
+  {
+   "id": "demo-1",
+   "demo": true,
+   "name": "מוטי לוי",
+   "business": "לוי מכסי בריכות",
+   "categories": [
+    "covers"
+   ],
+   "city": "חדרה",
+   "region": "sharon",
+   "address": "רחוב הדוגמה 1, חדרה",
+   "phone": "050-000-0001",
+   "whatsapp": "972500000001",
+   "email": "demo1@example.com",
+   "website": "",
+   "years": 14,
+   "description": "התקנה ומכירה של מכסי בריכה ידניים, חשמליים ושקועים. מדידה בבית הלקוח והתקנה תוך שבועיים.",
+   "services": [
+    "מכסים חשמליים",
+    "מכסי בטיחות",
+    "מכסים שקועים",
+    "תיקון ושדרוג מכסים"
+   ],
+   "serviceAreas": [
+    "sharon",
+    "center",
+    "haifa"
+   ],
+   "nationwide": false,
+   "keywords": "כיסוי רולר שלדה",
+   "priceList": [
+    {
+     "item": "מכסה ידני לבריכה עד 8 מטר",
+     "price": 8500,
+     "withInstall": true,
+     "unit": "₪"
+    },
+    {
+     "item": "מכסה חשמלי עד 8 מטר",
+     "price": 19500,
+     "withInstall": true,
+     "unit": "₪"
+    },
+    {
+     "item": "מכסה חשמלי, ללא התקנה",
+     "price": 16000,
+     "withInstall": false,
+     "unit": "₪"
+    }
+   ]
+  },
+  {
+   "id": "demo-2",
+   "demo": true,
+   "name": "אבי כהן",
+   "business": "כהן בריכות ופיתוח",
+   "categories": [
+    "builders",
+    "machine-rooms"
+   ],
+   "city": "נתניה",
+   "region": "sharon",
+   "address": "רחוב הדוגמה 2, נתניה",
+   "phone": "050-000-0002",
+   "whatsapp": "972500000002",
+   "email": "demo2@example.com",
+   "website": "",
+   "years": 22,
+   "description": "תכנון ובנייה של בריכות בטון וגונייט מהתכנון ועד המסירה, כולל חדר מכונות.",
+   "services": [
+    "בריכות גונייט",
+    "בריכות פרטיות",
+    "חדר מכונות",
+    "היתרים וליווי"
+   ],
+   "serviceAreas": [
+    "sharon",
+    "center",
+    "telaviv"
+   ],
+   "nationwide": false,
+   "keywords": "בטון בנייה חפירה",
+   "priceList": [
+    {
+     "item": "בריכה פרטית 8×4 מ' מפתח ביד",
+     "price": 185000,
+     "withInstall": true,
+     "unit": "₪"
+    },
+    {
+     "item": "חדר מכונות מובנה",
+     "price": 14000,
+     "withInstall": true,
+     "unit": "₪"
+    }
+   ]
+  },
+  {
+   "id": "demo-3",
+   "demo": true,
+   "name": "דני אזולאי",
+   "business": "אזולאי ציפויי בריכות",
+   "categories": [
+    "finishing",
+    "repairs"
+   ],
+   "city": "חיפה",
+   "region": "haifa",
+   "address": "רחוב הדוגמה 3, חיפה",
+   "phone": "050-000-0003",
+   "whatsapp": "972500000003",
+   "email": "demo3@example.com",
+   "website": "",
+   "years": 17,
+   "description": "ציפוי פוליאסטר, פיברגלס ושיפוץ בריכות ישנות. אחריות כתובה.",
+   "services": [
+    "ציפוי פוליאסטר",
+    "פיברגלס",
+    "שיפוץ בריכה",
+    "טיח"
+   ],
+   "serviceAreas": [
+    "haifa",
+    "north"
+   ],
+   "nationwide": false,
+   "keywords": "פיניש שפכטל",
+   "priceList": [
+    {
+     "item": "ציפוי פוליאסטר, מחיר למ\"ר",
+     "price": 260,
+     "withInstall": true,
+     "unit": "₪ למ\"ר"
+    },
+    {
+     "item": "שיפוץ כללי, החל מ",
+     "price": 22000,
+     "withInstall": true,
+     "unit": "₪"
+    }
+   ]
+  },
+  {
+   "id": "demo-4",
+   "demo": true,
+   "name": "רוני מזרחי",
+   "business": "מזרחי חימום לבריכות",
+   "categories": [
+    "heating",
+    "equipment"
+   ],
+   "city": "ראשון לציון",
+   "region": "center",
+   "address": "רחוב הדוגמה 4, ראשון לציון",
+   "phone": "050-000-0004",
+   "whatsapp": "972500000004",
+   "email": "demo4@example.com",
+   "website": "",
+   "years": 9,
+   "description": "אספקה והתקנה של משאבות חום, מערכות סינון ומשאבות מהירות משתנה.",
+   "services": [
+    "משאבות חום",
+    "משאבות מהירות משתנה",
+    "פילטרים",
+    "אוטומציה"
+   ],
+   "serviceAreas": [
+    "center",
+    "telaviv",
+    "shfela"
+   ],
+   "nationwide": true,
+   "keywords": "חימום סינון",
+   "priceList": [
+    {
+     "item": "משאבת חום 12 קילוואט",
+     "price": 11500,
+     "withInstall": true,
+     "unit": "₪"
+    },
+    {
+     "item": "משאבת חום 12 קילוואט, ללא התקנה",
+     "price": 9800,
+     "withInstall": false,
+     "unit": "₪"
+    },
+    {
+     "item": "משאבה מהירות משתנה",
+     "price": 3200,
+     "withInstall": true,
+     "unit": "₪"
+    }
+   ]
+  },
+  {
+   "id": "demo-5",
+   "demo": true,
+   "name": "יוסי פרץ",
+   "business": "פרץ תאורה ואטרקציות",
+   "categories": [
+    "lighting"
+   ],
+   "city": "באר שבע",
+   "region": "south",
+   "address": "רחוב הדוגמה 5, באר שבע",
+   "phone": "050-000-0005",
+   "whatsapp": "972500000005",
+   "email": "demo5@example.com",
+   "website": "",
+   "years": 11,
+   "description": "תאורת לד תת-מימית, מפלים, ג'קוזי ומערכות שליטה חכמות.",
+   "services": [
+    "תאורת לד",
+    "מפלים",
+    "ג'קוזי",
+    "שליטה חכמה"
+   ],
+   "serviceAreas": [
+    "south",
+    "eilat",
+    "shfela"
+   ],
+   "nationwide": false,
+   "keywords": "אורות",
+   "priceList": [
+    {
+     "item": "זרקור לד תת-מימי כולל התקנה",
+     "price": 650,
+     "withInstall": true,
+     "unit": "₪"
+    },
+    {
+     "item": "מפל נירוסטה",
+     "price": 4800,
+     "withInstall": true,
+     "unit": "₪"
+    }
+   ]
+  },
+  {
+   "id": "demo-6",
+   "demo": true,
+   "name": "שמעון בן דוד",
+   "business": "בן דוד אחזקת בריכות",
+   "categories": [
+    "maintenance"
+   ],
+   "city": "תל אביב",
+   "region": "telaviv",
+   "address": "רחוב הדוגמה 6, תל אביב",
+   "phone": "050-000-0006",
+   "whatsapp": "972500000006",
+   "email": "demo6@example.com",
+   "website": "",
+   "years": 8,
+   "description": "שירות אחזקה שבועי, טיפול במים וניקוי יסודי לבריכות פרטיות ומשותפות.",
+   "services": [
+    "אחזקה שבועית",
+    "טיפול במים",
+    "ניקוי יסודי"
+   ],
+   "serviceAreas": [
+    "telaviv",
+    "center",
+    "sharon"
+   ],
+   "nationwide": false,
+   "keywords": "כלור ניקיון",
+   "priceList": [
+    {
+     "item": "אחזקה חודשית",
+     "price": 650,
+     "withInstall": true,
+     "unit": "₪ לחודש"
+    },
+    {
+     "item": "ניקוי יסודי חד-פעמי",
+     "price": 900,
+     "withInstall": true,
+     "unit": "₪"
+    }
+   ]
+  },
+  {
+   "id": "demo-7",
+   "demo": true,
+   "name": "עמית שגב",
+   "business": "שגב מכסים וציוד",
+   "categories": [
+    "covers",
+    "equipment"
+   ],
+   "city": "אשדוד",
+   "region": "shfela",
+   "address": "רחוב הדוגמה 7, אשדוד",
+   "phone": "050-000-0007",
+   "whatsapp": "972500000007",
+   "email": "demo7@example.com",
+   "website": "",
+   "years": 6,
+   "description": "מכירה והתקנה של מכסים וציוד סינון, משלוח לכל הארץ.",
+   "services": [
+    "מכסים",
+    "ציוד סינון",
+    "משלוחים"
+   ],
+   "serviceAreas": [
+    "shfela",
+    "south",
+    "center"
+   ],
+   "nationwide": true,
+   "keywords": "כיסוי",
+   "priceList": [
+    {
+     "item": "מכסה ידני עד 8 מטר",
+     "price": 7800,
+     "withInstall": true,
+     "unit": "₪"
+    },
+    {
+     "item": "מכסה ידני, ללא התקנה",
+     "price": 6200,
+     "withInstall": false,
+     "unit": "₪"
+    }
+   ]
+  },
+  {
+   "id": "demo-8",
+   "demo": true,
+   "name": "אריה גולן",
+   "business": "גולן פיתוח וגינון",
+   "categories": [
+    "landscaping",
+    "builders"
+   ],
+   "city": "כרמיאל",
+   "region": "north",
+   "address": "רחוב הדוגמה 8, כרמיאל",
+   "phone": "050-000-0008",
+   "whatsapp": "972500000008",
+   "email": "demo8@example.com",
+   "website": "",
+   "years": 19,
+   "description": "פיתוח סביב הבריכה: דק, אבן, דשא סינטטי וגדרות בטיחות.",
+   "services": [
+    "דק",
+    "ריצוף אבן",
+    "גדרות בטיחות",
+    "דשא סינטטי"
+   ],
+   "serviceAreas": [
+    "north",
+    "haifa"
+   ],
+   "nationwide": false,
+   "keywords": "גינה",
+   "priceList": [
+    {
+     "item": "דק קומפוזיט, מחיר למ\"ר",
+     "price": 520,
+     "withInstall": true,
+     "unit": "₪ למ\"ר"
+    },
+    {
+     "item": "גדר בטיחות לבריכה, מחיר למטר",
+     "price": 450,
+     "withInstall": true,
+     "unit": "₪ למטר"
+    }
+   ]
+  },
+  {
+   "id": "demo-9",
+   "demo": true,
+   "name": "גיא רוזנברג",
+   "business": "רוזנברג איתור ותיקון נזילות",
+   "categories": [
+    "repairs"
+   ],
+   "city": "ירושלים",
+   "region": "jerusalem",
+   "address": "רחוב הדוגמה 9, ירושלים",
+   "phone": "050-000-0009",
+   "whatsapp": "972500000009",
+   "email": "demo9@example.com",
+   "website": "",
+   "years": 13,
+   "description": "איתור נזילות בציוד ובקליפה, תיקון וחידוש אטימות.",
+   "services": [
+    "איתור נזילות",
+    "אטימה",
+    "תיקוני צנרת"
+   ],
+   "serviceAreas": [
+    "jerusalem",
+    "shfela",
+    "center"
+   ],
+   "nationwide": false,
+   "keywords": "נזילה",
+   "priceList": [
+    {
+     "item": "איתור נזילה",
+     "price": 1500,
+     "withInstall": true,
+     "unit": "₪"
+    },
+    {
+     "item": "תיקון צנרת, החל מ",
+     "price": 1800,
+     "withInstall": true,
+     "unit": "₪"
+    }
+   ]
+  },
+  {
+   "id": "demo-10",
+   "demo": true,
+   "name": "נועם אילוז",
+   "business": "אילוז בריכות אילת",
+   "categories": [
+    "builders",
+    "maintenance"
+   ],
+   "city": "אילת",
+   "region": "eilat",
+   "address": "רחוב הדוגמה 10, אילת",
+   "phone": "050-000-0010",
+   "whatsapp": "972500000010",
+   "email": "demo10@example.com",
+   "website": "",
+   "years": 12,
+   "description": "בנייה, שיפוץ ואחזקה של בריכות באילת ובערבה.",
+   "services": [
+    "בנייה",
+    "שיפוץ",
+    "אחזקה"
+   ],
+   "serviceAreas": [
+    "eilat",
+    "south"
+   ],
+   "nationwide": false,
+   "keywords": "",
+   "priceList": [
+    {
+     "item": "אחזקה חודשית",
+     "price": 700,
+     "withInstall": true,
+     "unit": "₪ לחודש"
+    }
+   ]
+  }
+ ]
+}
